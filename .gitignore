@@ -1,4 +1,14 @@
-public/
 lib/
 dist/
 .vscode
+node_modules/
+.DS_Store
+.env
+.env.test
+EXAMPLEDATA/
+npm-debug.log
+bundle.js
+bundle.js.map
+RIDBFullExport_v1/
+rurallion.sql
+.tmp/

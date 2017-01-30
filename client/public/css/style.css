@@ -1,0 +1,716 @@
+/*.FancyBorder {
+  border: 3px solid black;
+}
+
+.FancyBorder-pink {
+  border-color: deeppink;
+}
+
+.FancyBorder-red {
+  border-color: red;
+}
+.FancyBorder-orange {
+  border-color: orange;
+}
+.FancyBorder-yellow {
+  border-color: yellow;
+}
+.FancyBorder-green {
+  border-color: green;
+}
+.FancyBorder-blue {
+  border-color: blue;
+}
+
+.FancyBorder-purple {
+  border-color: purple;
+}
+.FancyBorder-black {
+  border-color: black;
+}
+.FancyBorder-brown {
+  border-color: brown;
+}
+.FancyBorder-turquoise {
+  border-color: turquoise;
+}*/
+
+/*******************************/
+/************ COLORS ************/
+/*******************************/
+
+.dark-primary-color    { background: #0097A7 ; }
+.default-primary-color { background: #00BCD4 ; }
+.light-primary-color   { background: #B2EBF2 ; }
+.text-primary-color    { color: #FFFFFF ; }
+.accent-color          { background: #FF9800 ; }
+.accent-color-hover    { background: #ed8d00; }
+.primary-text-color    { color: #212121 ; }
+.secondary-text-color  { color: #757575 ; }
+.divider-color         { border-color: #BDBDBD ; }
+
+/*******************************/
+/************ FONTS ************/
+/*******************************/
+@font-face {
+  font-family: 'La Cithare';
+  src:  url('fonts/La Cithare.ttf') format('ttf'),
+        url('fonts/La Cithare.woff') format('woff'),
+        url('fonts/La Cithare.eot') format('eot');
+}
+@font-face {
+  font-family: 'Futura Lt Book';
+  src:  url('fonts/futura_lt_book.ttf') format('ttf'),
+        url('fonts/futura_lt_book.woff') format('woff'),
+        url('fonts/futura_lt_book.eot') format('eot'),
+}
+
+body {
+  font-family: 'Futura Lt Book', sans-serif;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: 'La Cithare', cursive;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+.mapImage {
+  height: 35px;
+  width: 35px; 
+  margin-bottom: 3px;
+}
+
+.mapImage:hover {
+  opacity: .5;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.finalize-button {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  border-width: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.goBackButton {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #4e3c2e;
+  color:white;
+  border-radius: 5px;
+  border-width: 0px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.centered {
+  display: block;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  width: 80%;
+}
+
+.inputs {
+  margin-top: 15px; 
+}
+.landing-page-title {
+  margin-bottom: 35px;
+}
+
+.landing-page-inputs {
+  display: block;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  color: #545454;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.landing-page-input-examples {
+  font-style: italic;
+  font-size: 12px;
+  color: #757575;
+}
+
+.landing-page-interest-title {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.landing-page-interest-glyphicon {
+  height: 50px;
+  width: 50px;
+}
+
+.landing-page-interest-glyphicon-active {
+  height: 50px;
+  width: 50px;
+}
+
+.landing-page-interest-button:hover {
+  background-color: #0097A7;
+}
+
+.landing-page-interest-button-active:hover {
+  background-color: #00BCD4;
+}
+
+@media screen and (max-width: 1350px) {
+  .landing-page-interest-name {
+    display: none;
+  }
+}
+
+.mapContainer {
+  margin: 0px;
+  padding: 0px; 
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 87vh;
+  margin: 0;
+}
+
+.EntityListEntry:hover {
+  cursor: pointer;
+  background-color: #c3c3c3;
+}
+
+
+.tabs {
+  margin: 0px;
+  padding: 0px;
+  height: 95vh;
+}
+
+.tabContent {
+  height: 94vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.EntityListEntry {
+  margin: 0px;
+  padding: 5px 0px;
+  background: white;
+  color: #6a6a6a
+}
+
+.entityModal {
+  width: 80%;
+}
+
+.entityModalDescription {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.modalActivityLabel {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.modalMap {
+  height: 45vh;
+  margin: 5px;
+}
+
+.itineraryEntry {
+  background: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.itinerary {
+  padding: 0px;
+  margin: 0px;
+}
+
+.itinerary-message {
+  margin-top: 60px;
+}
+
+.itinerary-button {
+  padding: 0px;
+}
+
+.resultsPage {
+  background: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landingPage {
+  background-image: url('https://static.pexels.com/photos/67517/pexels-photo-67517.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-page-input-title {
+  font-weight: bold;
+}
+
+.landingPageContainer {
+  margin-top:5%;
+  margin-bottom:10%;
+}
+
+.landingPageContent {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color:  #444D52;
+  border-radius: 10px;
+}
+
+.mapAndList {
+  background-color: white;
+  height: 95vh;
+  border-radius: 5px;
+}
+
+.entityContactsRow {
+  padding-top: 20px
+}
+
+.entityDescriptionRow {
+  padding-top: 20px
+}
+
+.interestButton { 
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #00BCD4;
+  border-width: 0px;
+  font-size: 15px;
+  color: #212121;
+}
+
+.includedInterestButton { 
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0097A7;
+  border-width: 0px;
+  font-size: 15px;
+  color: white;
+}
+
+.plan-vacation-button {
+  border-radius: 5px;
+  margin-top: 25px;
+  line-height: 2;
+  font-size: 20px;
+  border-width: 0px
+}
+
+.day-text {
+  font-style: bold;
+}
+
+.legRow {
+  background: white;
+  margin: 8px 0;
+}
+
+.childLegRow {
+  overflow-x: hidden;
+}
+
+.tabButtons button {
+  margin-top: 2vh;
+  height: 3vh;
+  width:100%;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.legHourInput {
+  width:30px;
+  height: 15px;
+  font-size: 12px;
+}
+
+.toggleStepButton {
+  float:left;
+  height: 10px;
+  top: 50%;
+  font-size: 12px;
+  background: white;
+  border: 0px;
+}
+
+.cost {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+.stepMarker {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.itinerary-icon {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.legText { 
+  margin-left: 10px;
+  font-size: 13px;
+  color: #4b4848
+}
+
+.directions { 
+  font-size: 10px;
+}
+
+.duration-text {
+  font-style: italic;
+  font-size: 12px;
+  color: #757575;
+}
+
+.stay-row {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+/*******************************/
+/*******OPTIONS PAGE***********/
+/*******************************/
+
+.options-interestfavicon { 
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-width: 0px;
+  font-size: 15px;
+  color: black;
+}
+
+.options-includedinterestfavicon { 
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:  #0097A7;
+  border-width: 0px;
+  font-size: 15px;
+  color: white;
+}
+
+.options-favicon {
+  height: 45px;
+  width: 45px;
+}
+
+.options-favicon:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.options-container {
+  margin-left: 25px;
+}
+
+.options-input-container {
+  background: transparent;
+  border: none;
+  text-align: center;
+  margin: 15px;
+  float: left;
+}
+
+.options-inputs {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.options-planbutton-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.options-planbutton {
+  margin-left: -20px;
+  height: 40px;
+  width: 100px;
+}
+
+/*******************************/
+/*******PROGRESS BARS***********/
+/*******************************/
+
+.col-progress-glyph {
+  padding-right: 5px;
+}
+.col-progress-glyph .glyphicon {
+  float: right;
+  font-size: 2em;
+  font-weight: 500;
+}
+.col-progress-bar {
+  padding-left: 0;
+}
+.progress {
+  margin-bottom: 2%;
+  height: 2em;
+}
+.progress-bar {
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 0.5%;
+}
+.progress-bars {
+  padding-top: 1%;
+}
+.progress-bar-success {
+  background-color: #0097A7;
+}
+.progress-bar-warning {
+  background-color: #FF9800;
+}
+
+/*******************************/
+/******* NAVIGATION ***********/
+/*******************************/
+
+.navbar-collapse {
+  padding-right: 0;
+}
+.navbar-default {
+  background-color:  #757575;
+  margin-bottom: 0;
+}
+.navbar-default .container {
+  margin: 0;
+  width:100%;
+  padding-right:0;
+}
+.navbar-default .navbar-brand {
+  font-family: 'La Cithare', cursive;
+  color:  #FF9800;
+  font-size: 38px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.navbar-default .navbar-brand:hover {
+  color:  #ed8d00;
+  font-size: 40px;
+  max-height: 5vh;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  border-color: #BDBDBD;
+  background-color: #757575;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: white;
+  background-color:  #00BCD4;
+  border-color: transparent;
+}
+ul.nav.nav-tabs.nav-justified.navbar-nav {
+  width: 34%;
+  font-size: 20px;
+  background-color: white;
+  float:right;
+  width: 35%;
+  border-bottom: 0;
+  display: table;
+}
+.nav-justified {
+  table-layout: fixed;
+}
+.nav-justified:before { display: none; }
+.nav-justified:after { display: none; }
+
+@media screen and (max-width: 765px) {
+  ul.nav.nav-tabs.nav-justified.navbar-nav {
+    width:100%;
+    float: left;
+  }
+  .nav-tabs.nav-justified>li>a {
+    margin-bottom: 0;
+  }
+}
+/*END OF NAV STYLES*/
+
+
+.legHourInput {
+  width:30px;
+  height: 15px;
+  font-size: 12px;
+}
+
+.toggleStepButton {
+  float:left;
+  height: 10px;
+  top: 50%;
+  font-size: 12px;
+  background: white;
+  border: 0px;
+}
+
+.stepMarker {
+  height: 11px;
+  width: 11px;
+  border-radius: 5px;
+  margin:0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.start {
+    background: green;
+}
+
+.end {
+    background: red;
+}
+
+.adventure {
+    background: purple;
+}
+
+.legText { 
+  font-size: 13px;
+  color: #4b4848
+}
+
+.directions { 
+  font-size: 10px;
+}
+
+/*.results-page-icon {
+  width: 20px;
+  height: 20px;
+}*/
+
+.result-page-plus-sign {
+  font-size: 1.5em;
+  color: #0097A7;
+}
+
+a .result-page-plus-sign:hover {
+  color:#00BCD4;
+}
+
+.result-page-info-sign {
+  font-size: 1.2em;
+  color: #757575;
+}
+
+a .result-page-info-sign:hover {
+  color:white;
+}
+
+.result-page-check-sign {
+  font-size: 1.5em;
+  color: #ed8d00;
+}
+
+a .result-page-check-sign:hover {
+  color:#FF9800;
+}
+
+.finalizeButtonContainer {
+  height: 10vh;
+}
+
+.itineraryContainer {
+  height: 84vh;
+  overflow-y: scroll;
+}
+
+/*******************************/
+/**BOOTSTRAP BUTTONS AND LABELS**/
+/*******************************/
+.btn-primary {
+  background-color: #00BCD4;
+  border-color: #00BCD4;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #0097A7;
+  border-color: #0097A7;
+  color: white;
+}
+.btn-primary:focus {
+  background-color: #0097A7;
+  border-color: #0097A7;
+  color: white;
+}
+.btn-primary:active:focus {
+  background-color: #0097A7;
+  border-color: #0097A7;
+  color: white;
+}
+.btn-success {
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: white;
+}
+.btn-success:hover {
+  background-color: #ed8d00;
+  border-color: #ed8d00;
+  color: white;
+}
+.btn-success:focus {
+  background-color: #ed8d00;
+  border-color: #ed8d00;
+  color: white;
+}
+.btn-success:active:focus {
+  background-color: #ed8d00;
+  border-color: #ed8d00;
+  color: white;
+}
+.label-primary {
+  background-color:  #00BCD4;
+}
